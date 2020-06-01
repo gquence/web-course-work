@@ -80,6 +80,10 @@ function main_lesson_table() {
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4)
 		{
+            if (this.responseText === '200\nSuccess\nGETALL\n')
+            {
+                table_gen(table_outer, ["You have not any exams"], 1, 1);
+            }
 			if (this.responseText.startsWith('200\nSuccess\nGETALL'))
 			{
                 var arr = [];
@@ -117,6 +121,10 @@ function main_lesson_table() {
                     item.pop();
                 });
 
+                if (arr.length == 1)
+                {
+                    table_gen(table_outer, ["You have not any exams"], 1, 1);
+                }
                 arr[0] = ['Lessons names', 'Descriptions', 'Control type'];
                 //console.log(arr);
                 //console.log(header.length);
