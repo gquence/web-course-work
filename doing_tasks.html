@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>LMS proj</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<body  onload="" onbeforeunload="return ft_close();">
+
+<header class="header">
+    <div class="container">    
+        <div class="header_inner">
+            <div class="header_logo">LMSystem</div>
+            <nav class="nav">
+                <a class="nav__link" href="main.html">Home</a>
+                <a class="nav__link" href="subjects.html">Subjects</a>
+                <a class="nav__link" href="lessons.html">Lessons</a>
+                <a class="nav__link" href="#" onclick="exit();">Exit</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="intro">
+    <div class="container">
+            <div class="table__header" id="header"></div>
+            <div class="table" >
+                <table class="table" id="table"></table>
+                <a  class="btn_right" onclick="sendAnswer();" id="EndBtn">End</a>
+                <div class="btn_right" id="timer"></div>
+            </div>
+            <!--<table class="table"><tr>
+                <td>Hi, I'm your first cell.</td>
+                <td>I'm your second cell.</td>
+                <td>I'm your third cell.</td>
+                <td>I'm your fourth cell.</td>
+            </tr></table> -->
+    </div>
+</div>
+</body>
+<script src="js/doing_tasks.js"></script>
+<script src="js/cookieCheck.js"></script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>LMS proj</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<body onload="subjects_table();">
+
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_logo">LMSystem</div>
+                <nav class="nav">
+                    <a class="nav__link" href="main.html">Home</a>
+                    <a class="nav__link" href="subjects.html">Subjects</a>
+                    <a class="nav__link" href="lessons.html">Lessons</a>
+                    <a class="nav__link" href="#" onclick="exit();">Exit</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="container">  
+            <div class="table">
+                <div class="table__header">Subjects Info</div>  
+                <table class="table" id="table">
+                    <tr id="tr0"></tr>
+                    <tr id="tr1" onclick="setSelectedRow(1);"></tr>
+                    <tr id="tr2" onclick="setSelectedRow(2);"></tr>
+                    <tr id="tr3" onclick="setSelectedRow(3);"></tr>
+                    <tr id="tr4" onclick="setSelectedRow(4);"></tr>
+                    <tr id="tr5" onclick="setSelectedRow(5);"></tr>
+                    <tr id="tr6" onclick="setSelectedRow(6);"></tr>
+                    <tr id="tr7" onclick="setSelectedRow(7);"></tr>
+                    <tr id="tr8" onclick="setSelectedRow(8);"></tr>
+                    <tr id="tr9" onclick="setSelectedRow(9);"></tr>
+                    <tr id="tr10" onclick="setSelectedRow(10);"></tr>
+                    <tr id="tr11" onclick="setSelectedRow(11);"></tr>
+                    <tr id="tr12" onclick="setSelectedRow(12);"></tr>
+                    <tr id="tr13" onclick="setSelectedRow(13);"></tr>
+                    <tr id="tr14" onclick="setSelectedRow(14);"></tr>
+                    <tr id="tr15" onclick="setSelectedRow(15);"></tr>
+                    <tr id="tr16" onclick="setSelectedRow(16);"></tr>
+                    <tr id="tr17" onclick="setSelectedRow(17);"></tr>
+                    <tr id="tr18" onclick="setSelectedRow(18);"></tr>
+                    <tr id="tr19" onclick="setSelectedRow(19);"></tr>
+                    <tr id="tr20" onclick="setSelectedRow(20);"></tr>
+                    <tr id="tr21" onclick="setSelectedRow(21);"></tr>
+                    <tr id="tr22" onclick="setSelectedRow(22);"></tr>
+                    <tr id="tr23" onclick="setSelectedRow(23);"></tr>
+                    <tr id="tr24" onclick="setSelectedRow(24);"></tr>
+                    <tr id="tr25" onclick="setSelectedRow(25);"></tr>
+                    <tr id="tr26" onclick="setSelectedRow(26);"></tr>
+                    <tr id="tr27" onclick="setSelectedRow(27);"></tr>
+                    <tr id="tr28" onclick="setSelectedRow(28);"></tr>
+                    <tr id="tr29" onclick="setSelectedRow(29);"></tr>
+                </table>
+                <a  class="btn_right" onclick="tryToPassBtn();">Subjects lessons</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/table_out.js"></script>
+<script src="js/subject.js"></script>
+<script src="js/cookieCheck.js"></script>
+</html>

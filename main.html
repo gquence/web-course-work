@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>LMS proj</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<body  onload="">
+
+<header class="header">
+    <div class="container">    
+        <div class="header_inner">
+            <div class="header_logo">LMSystem</div>
+            <nav class="nav">
+                <a class="nav__link" href="main.html">Home</a>
+                <a class="nav__link" href="subjects.html">Subjects</a>
+                <a class="nav__link" href="lessons.html">Lessons</a>
+                <a class="nav__link" href="#" onclick="exit();">Exit</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="intro">
+    <div class="container">
+            <div class="table" id="UserTable" >
+                <div class="table__header" >It's you</div>
+            </div>
+            <div class="table" >
+                <div class="table__header">Exams Table</div>
+                <table class="table" id="table"></table>
+                <div class="btn_right">You can try to solve Exams in 'lessons' tab</div>
+            </div>
+
+            <div class="table" >
+                <div class="table__header">Current Tasks Results</div>
+                <table class="table" id="ResultsTable"></table>
+            </div>
+
+            <!--<table class="table"><tr>
+                <td>Hi, I'm your first cell.</td>
+                <td>I'm your second cell.</td>
+                <td>I'm your third cell.</td>
+                <td>I'm your fourth cell.</td>
+            </tr></table> -->
+    </div>
+</div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/cookieCheck.js"></script>
+</html>

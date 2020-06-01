@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>LMS proj</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<body>
+
+<header class="header">
+    <div class="container">    
+        <div class="header_inner">
+            <div class="header_logo">LMSystem</div>
+            <nav class="nav">
+                <a class="nav__link" href="#" onclick="contactInfo();">Contact</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="intro">
+    <div class="container">
+        <div class="loginbox">
+    		<!-- action="register.php"  method="POST" name="register.php"-->
+			<form action="javascript:void(0);" name="form" method="POST" on>
+                <div class="loginbox__header">Sign in</div>
+                <div class="loginbox__inner">
+                    Login:
+                    <input id="login" type="text" name="" placeholder="Enter Login">
+                    Password: 
+                    <input id="password" type="password" name="" placeholder="Enter Password">
+                    <input id="login_btn" class="btn" type="submit" name="" value = "Log In" onclick="auth(this.form);">
+
+                    <a href="#" class="loginbox__footer" onclick="forgetPass();">Forget password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/auth.js"></script>
+<script src="js/info.js"></script>
+</html>
