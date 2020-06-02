@@ -82,7 +82,8 @@ function main_lesson_table() {
 		{
             if (this.responseText === '200\nSuccess\nGETALL\n')
             {
-                table_gen(table_outer, ["You have not any exams"], 1, 1);
+                table_gen(table_outer, [["You have not any exams"]], 1, 1);
+                results_report_table();
             }
 			if (this.responseText.startsWith('200\nSuccess\nGETALL'))
 			{
@@ -158,7 +159,7 @@ function results_report_table() {
 			
             if (this.responseText === '200\nSuccess\nGETREPORT\n')
             {
-                table_gen(table_outer, ["You hadn't solve anything yet"], 1, 1);
+                table_gen(table_outer, [["You hadn't solve anything yet"]], 1, 1);
             }
 			if (this.responseText.startsWith('200\nSuccess\nGETREPORT\n'))
 			{

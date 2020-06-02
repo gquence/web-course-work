@@ -10,7 +10,9 @@ function auth(form) {
 			{
 				document.cookie = "login=" + login;
 				document.cookie = "pass=" + password;
-				window.location = "http://localhost/main.html";
+				
+				window.location.pathname = "/main.html";
+				//window.location = 
 			}
 			else if (this.responseText ==  '301\nInvalidJsonValues: wrong password\nAUTH\n')
 			{
@@ -24,7 +26,7 @@ function auth(form) {
 			}
 			else
 			{
-				alert("Error! Wrong values of login of password fields"  + this.responseText);
+				alert("Error! Wrong values of login of password fields" );
 				return ;
 			}
 		}

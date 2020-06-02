@@ -35,9 +35,9 @@ xhttp.onreadystatechange = function() {
         //console.log(this.responseText + "\n");  
         if (this.responseText == "200\nSuccess\nGET\nresult: No tasks with this id or l_id&")
         {
-            res = confirm("No available tasks fot this lesson. Contact with your Educator.\n Do you want to stay here?");
+            res = confirm("No available tasks for this lesson. Contact with your Educator.\n Do you want to stay here?");
             if (!res)
-                window.location = 'http://localhost/lessons.html';
+                window.location.pathname = "/lessons.html";
         }
 		if (this.responseText.startsWith('200\nSuccess\nGET\n'))
 		{
@@ -97,7 +97,7 @@ xhttp.onreadystatechange = function() {
 	}
 };
 //инициализируем соединения
-xhttp.open("POST", "t_tasks/CRUD_tasks.php", true);
+xhttp.open("POST", window.location.protocol + "//" +window.location.host + "/t_tasks/CRUD_tasks.php", true);
 //устанвливаем заголовок
 xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=utf-8");
 //посылаем запрос
@@ -199,14 +199,13 @@ function task_table_gen(table_outer, arr, sizeY)
 
 function ft_close()
 {
-
     return 'Are you sure, you want to come out from this page?\nYour results will be erased';
 }
 
 function ft_out()
 {
 
-    location.replace( 'http://localhost/main.html');
+    window.location.pathname = "main.html";
 }
 function sendAnswer()
 {

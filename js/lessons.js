@@ -37,6 +37,6 @@ function tryToPassBtn()
 		document.cookie = "l_id=" + document.getElementById(tr_id + selectedRow.toString()).getElementsByTagName("td")[0].innerText;
         document.cookie = "l_type=" + document.getElementById(tr_id + selectedRow.toString()).getElementsByTagName("td")[3].innerText;
         //alert(document.cookie);
-        window.location = 'http://localhost/doing_tasks.html';
+        window.location.pathname = "doing_tasks.html";
     }
 }

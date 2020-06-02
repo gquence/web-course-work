@@ -27,7 +27,11 @@ function lesson_table() {
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4)
         {
-            if (this.responseText.startsWith('200\nSuccess\nGET'))
+            if (this.responseText.startsWith("200\nSuccess\nGET\nresult: No lessons with this id"))
+            {
+                table_fill(table_outer, [['No such lessons']], 1, 1);
+            }
+            else if (this.responseText.startsWith('200\nSuccess\nGET'))
             {
                 var arr = [];
                 var responseText;
@@ -71,7 +75,7 @@ function lesson_table() {
             }
             else
             {
-                alert("Error! Bad connection!" + this.responseText);
+                alert("Error! Bad entered values or connection!");
                 return ;
             }
         }

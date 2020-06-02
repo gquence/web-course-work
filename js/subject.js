@@ -35,6 +35,6 @@ function tryToPassBtn()
     else
     {
 		document.cookie = "subj_id=" + document.getElementById(tr_id + selectedRow.toString()).getElementsByTagName("td")[0].innerText;
-        window.location = 'http://localhost/lessons.html';
+        window.location.pathname = "/lessons.html";
     }
 }

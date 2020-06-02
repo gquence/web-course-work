@@ -22,7 +22,7 @@ xhttp.onreadystatechange = function() {
 		}
 		else
 		{
-            window.location = "http://localhost/index.html";
+            window.location.pathname = "/index.html";
 			return ;
 		}
 	}
@@ -39,5 +39,5 @@ function exit()
 {
     document.cookie = "login=a";
     document.cookie = "pass=a";
-    window.location = "http://localhost/index.html";
+    window.location.pathname = "/index.html";
 }
